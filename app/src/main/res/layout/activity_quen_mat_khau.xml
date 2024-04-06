@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.Assignment_Ph32598.lab1.QuenMatKhau"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:layout_margin="20dp">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Quên Mật Khẩu"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        ></TextView>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Nhập Email:"
+        android:textSize="20sp"
+        android:layout_marginTop="20dp"
+        ></TextView>
+
+    <com.google.android.material.textfield.TextInputLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    >
+    <com.google.android.material.textfield.TextInputEditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Nhập Email"
+        android:id="@+id/qmk_email"
+        ></com.google.android.material.textfield.TextInputEditText>
+
+
+</com.google.android.material.textfield.TextInputLayout>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/vienbtn2"
+        android:text="Kiểm Tra"
+        android:id="@+id/btnKiemTra"></Button>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/vienbtn2"
+        android:text="Trở Về Đăng Nhập"
+        android:onClick="btnTroVeDangNhap"></Button>
+</LinearLayout>
